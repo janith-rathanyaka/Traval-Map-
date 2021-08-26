@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import ReactMapGL,{Marker} from 'react-map-gl';
 import dotenv from 'dotenv';
+import RoomIcon from '@material-ui/icons/Room';
 
 dotenv.config();
 
@@ -27,9 +28,9 @@ function App() {
        longitude={-122.41}
        offsetLeft={-20} 
        offsetTop={-10}
-      >
-        <div>you are here</div>
-
+      > 
+       
+        <RoomIcon style={{fontSize:viewport.zoom*7, color:'slateblue'}} />
       </Marker>
 
     </ReactMapGL>
